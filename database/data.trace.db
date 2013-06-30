@@ -1,0 +1,6 @@
+06-30 16:02:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "STAFF" not found; SQL statement:
+select staff_id,staff_code,staff_name,staff_pwd,department_id from staff where 1=1 [42102-172]
+06-30 16:10:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "CATALOGS" not found; SQL statement:
+select * from catalogs [42102-172]
