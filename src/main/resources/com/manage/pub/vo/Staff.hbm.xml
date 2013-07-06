@@ -3,12 +3,12 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping package="com.manage.pub.vo"><!-- 这里的package记得要写对啊。要不然运行也会出错的 -->
-    <class name="Staff" table="staff"><!-- 如果表名跟类名一个样的话，那么table属性可以不写 -->
-        <id name="staffId"></id>
-        <property name="staffCode"></property>
-        <property name="staffName"></property>
-        <property name="staffPwd"></property>
-        <property name="departmentId"></property>
+<hibernate-mapping package="com.manage.pub.vo">
+    <class name="Staff" table="staff">
+        <id name="staffId" column="staff_id"></id>
+        <property name="staffCode" column="staff_code"></property>
+        <property name="staffName" column="staff_name"></property>
+        <property name="staffPwd" column="staff_pwd"></property>
+        <property name="departmentId" column="department_id"></property>
     </class>
 </hibernate-mapping>
