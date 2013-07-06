@@ -25,7 +25,7 @@
         <property name="password" value="${jdbc.password}"></property>
     </bean>
 	
-	<bean id="jdbcDao" class="com.manage.spring.JdbcDao">
+	<bean id="jdbcDao" class="com.manage.spring.JdbcDao" init-method="init" destroy-method="cleanup">
 		<property name="jdbcTemplate" ref="jdbcTemplate" />
 	</bean>
 	

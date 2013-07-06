@@ -26,6 +26,14 @@ public class JdbcDao {
 		}
 	}
 
+    public void init(){
+        System.out.println("===========================DAO INIT===========================================");
+    }
+
+    public void cleanup(){
+        System.out.println("===========================DAO DESTROY===========================================");
+    }
+
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
